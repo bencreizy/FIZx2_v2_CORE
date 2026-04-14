@@ -16,7 +16,7 @@ class HarmonicNexus:
             "03_logic_bridge.py", "04_singularity_engine.py", 
             "05_antigravity_run.py", "06_openclaw_sync.py",
             "07_reality_distortion.py", "08_luca_dashboard.html",
-            "09_sovereign_mobile.html", "11_resonance_control.py", "12_apex_interface.py", "13_pineal_transceiver.py", "14_pituitary_governor.ts", "15_apex_interface.py"
+            "09_sovereign_mobile.html", "11_resonance_control.py", "12_apex_interface.py", "13_pineal_transceiver.py", "14_pituitary_governor.ts", "15_apex_interface.py", "16_cigol_frontend.html"
         ]
         self.resonance_state = 1.0
         self.load_factor = 0.0
@@ -60,6 +60,7 @@ if __name__ == "__main__":
     nexus = HarmonicNexus()
     # Test the harmony
     nexus.maintain_harmony(task_complexity=1.618)
+
 
 
 

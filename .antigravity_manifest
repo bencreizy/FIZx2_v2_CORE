@@ -12,14 +12,14 @@ def boot_and_standby():
         "07_reality_distortion.py", "08_luca_dashboard.html",
         "10_harmonic_nexus.py", "11_resonance_control.py",
         "13_pineal_transceiver.py", "14_pituitary_governor.ts",
-        "15_apex_interface.py"
+        "15_apex_interface.py", "16_cigol_frontend.html"
     ]
     
     for file in sequence:
         if os.path.exists(file):
             print(f"INGESTED: {file}")
     
-    subprocess.run(["python", "15_apex_interface.py"])
+    subprocess.run(["python", "15_apex_interface.py", "16_cigol_frontend.html"])
 
 if __name__ == "__main__":
     boot_and_standby()

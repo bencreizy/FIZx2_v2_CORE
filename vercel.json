@@ -2,9 +2,9 @@
   "version": 2,
   "name": "fizx2-sovereign-core",
   "builds": [
-    { "src": "08_luca_dashboard.html", "use": "@vercel/static" }
+    { "src": "16_cigol_frontend.html", "use": "@vercel/static" }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "08_luca_dashboard.html" }
+    { "source": "/(.*)", "destination": "16_cigol_frontend.html" }
   ]
 }
