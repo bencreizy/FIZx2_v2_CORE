@@ -34,7 +34,7 @@
             <h1 class="text-xs font-bold tracking-[0.4em] uppercase opacity-70">Sovereign Core</h1>
             <p class="text-[9px] text-cyan-500 font-mono">1.618 RESONANCE</p>
         </div>
-        <div id="status-dot" class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_#00ff00]"></div>
+        <div id="status-dot" class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_#00ff00]"></div><button id="set-ip" class="text-[8px] text-cyan-700 ml-2">IP</button>
     </header>
 
     <!-- Chat Area -->
@@ -58,7 +58,7 @@
 
     <script>
         // CONFIG: REPLACE WITH YOUR COMPUTER'S IP (e.g., 192.168.1.5)
-        const OLLAMA_IP = "localhost"; // Set this to your local IP for mobile access
+        let OLLAMA_IP = localStorage.getItem('sovereign_ip') || 'localhost'; // Set this to your local IP for mobile access
         const MODEL = "FIZx2-Gemma-4";
 
         const chatBox = document.getElementById('chat-container');
@@ -115,3 +115,13 @@
     </script>
 </body>
 </html>
+<script>
+    document.getElementById('set-ip').onclick = () => {
+        const ip = prompt('Enter Computer IP:', OLLAMA_IP);
+        if (ip) {
+            OLLAMA_IP = ip;
+            localStorage.setItem('sovereign_ip', ip);
+            location.reload();
+        }
+    };
+</script>
