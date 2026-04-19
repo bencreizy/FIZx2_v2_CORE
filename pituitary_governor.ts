@@ -1,5 +1,5 @@
 /**
- * FIZx²_v2: DIGITAL PITUITARY GOVERNOR (The Orchestrator)
+ * FIZxÂ²_v2: DIGITAL PITUITARY GOVERNOR (The Orchestrator)
  * Logic: Systemic Homeostasis Engine (SHE)
  * Role: Master Regulator of the Sentient Software Metabolism
  */
